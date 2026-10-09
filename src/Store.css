@@ -1,0 +1,34 @@
+.store{background:#faf8f3;color:#242424;min-height:100vh}.store-header{display:flex;align-items:center;justify-content:space-between;padding:25px 5%;background:white;border-bottom:1px solid #ddd}.store-header nav{display:flex;gap:24px}.store a{color:inherit}.store-main{max-width:1200px;margin:auto;padding:40px 24px 80px}.store-main h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,68px);margin:20px 0}.store-notice{padding:15px;background:#f1e5c9}.store-error{padding:15px;background:#ffe3df;color:#8b2019}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}.product{border:1px solid #ddd;background:white}.product-placeholder{height:210px;background:linear-gradient(140deg,#242424,#5b5142);color:#e5c57f;display:flex;flex-direction:column;justify-content:center;align-items:center;font:28px Georgia,serif}.product-placeholder small{font:12px Arial,sans-serif;margin-top:16px}.product img{width:100%;height:210px;object-fit:contain}.product-body{padding:24px}.product-body p{min-height:65px;line-height:1.6}.product-body strong{display:block;margin-bottom:20px}.store button{cursor:pointer}.store button:disabled{opacity:.55;cursor:not-allowed}.checkout-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:35px}.cart-line{display:flex;justify-content:space-between;gap:16px;padding:22px 0;border-bottom:1px solid #ddd}.cart-line h2{font-size:20px}.quantity{display:flex;align-items:center;gap:12px}.quantity button{padding:8px 12px;background:white;border:1px solid #ccc}.order-summary{background:white;border:1px solid #ddd;padding:28px;align-self:start}.summary-total{display:flex;justify-content:space-between;padding:25px 0;border-top:1px solid #ddd;margin-top:20px}.order-summary .button{width:100%;justify-content:center}.order-summary label{display:block;margin:14px 0}.order-summary input:not([type=checkbox]){display:block;width:100%;padding:12px;border:1px solid #aaa;margin-top:6px;font:inherit}.order-summary small{display:block;margin-top:16px;line-height:1.6}.consent{font-size:14px;line-height:1.6}.store-footer{padding:25px;text-align:center;border-top:1px solid #ddd}@media(max-width:750px){.product-grid,.checkout-grid{grid-template-columns:1fr}.store-header{gap:20px;flex-wrap:wrap}.store-header nav{gap:16px}.store-main{padding:24px 18px}.cart-line{flex-wrap:wrap}} 
+
+.cart-product-image{width:88px;height:88px;object-fit:contain;background:#f3efe7;border:1px solid #e5dfd3;border-radius:12px;flex-shrink:0}.cart-product-details{flex:1;min-width:0}.cart-image-placeholder{display:grid;place-items:center;font-size:12px;color:#777;text-align:center}.cart-line h2{margin-top:0}.quantity{flex-wrap:wrap}
+.cart-toast-region{position:fixed;top:24px;right:24px;z-index:1000;width:min(390px,calc(100vw - 32px))}.cart-toast{display:flex;align-items:flex-start;gap:14px;padding:20px;background:#242424;color:#fff;border:1px solid #c8a65c;border-radius:16px;box-shadow:0 18px 48px #0003;animation:toast-in .25s ease-out}.cart-toast-icon{display:grid;place-items:center;flex-shrink:0;width:34px;height:34px;border-radius:50%;background:#d7b56d;color:#242424}.cart-toast strong{font-size:15px}.cart-toast p{font-size:14px;line-height:1.5;margin:6px 0 10px;color:#eee}.cart-toast a{color:#e5c57f;font-size:14px}.cart-toast-close{margin-left:auto;border:0;background:transparent;color:#fff;font-size:24px;line-height:1;padding:4px}.cart-toast button:focus-visible,.cart-toast a:focus-visible{outline:2px solid #e5c57f;outline-offset:4px}@keyframes toast-in{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}@media(max-width:750px){.cart-product-image{width:64px;height:64px}.cart-toast-region{top:16px;right:16px}}@media(prefers-reduced-motion:reduce){.cart-toast{animation:none}}
+.product-grid {
+  align-items: stretch;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product > img,
+.product-placeholder {
+  flex-shrink: 0;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-body > strong {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.product-body > .button {
+  align-self: stretch;
+  width: 100%;
+  justify-content: center;
+}
