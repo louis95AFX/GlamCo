@@ -368,8 +368,7 @@ export default function App() {
 
         <section className="section impact">
           <div className="logo-panel">
-            src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Glam Co Academy logo" loading="lazy" />
-          </div>
+<img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Glam Co Academy logo" loading="lazy" />          </div>
           <div className="body-copy">
             <p className="eyebrow">BEYOND THE CLASSROOM</p>
             <h2>Beauty skills.<br /><em>Real-life impact.</em></h2>
