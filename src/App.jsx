@@ -216,7 +216,7 @@ export default function App() {
 
           <div className="hero-photo">
             <img
-              src="/images/graduates.png"
+              src={`${import.meta.env.BASE_URL}images/graduates.png`}
               alt="Glam Co Academy graduates celebrating with their certificates"
               fetchPriority="high"
             />
