@@ -218,7 +218,7 @@ export default function App() {
 
           <div className="hero-photo">
             <img
-              src="/images/graduates.png"
+              src={`${import.meta.env.BASE_URL}images/graduates.png`}
               alt="Glam Co Academy graduates celebrating with their certificates"
               fetchPriority="high"
             />
@@ -370,7 +370,7 @@ export default function App() {
 
         <section className="section impact">
           <div className="logo-panel">
-            <img src="/images/logo.png" alt="Glam Co Academy logo" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Glam Co Academy logo" loading="lazy" />
           </div>
           <div className="body-copy">
             <p className="eyebrow">BEYOND THE CLASSROOM</p>
