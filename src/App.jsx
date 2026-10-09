@@ -185,6 +185,8 @@ export default function App() {
           <a href="#courses">Our courses</a>
           <a href="#mission">Our mission</a>
           <a href="#journey">Your journey</a>
+          <a href="#shop">Products</a>
+          <a href="#cart">Cart</a>
           <a className="nav-button" href="#courses">Explore training</a>
         </nav>
       </header>
@@ -216,7 +218,7 @@ export default function App() {
 
           <div className="hero-photo">
             <img
-              src={`${import.meta.env.BASE_URL}images/graduates.png`}
+              src="/images/graduates.png"
               alt="Glam Co Academy graduates celebrating with their certificates"
               fetchPriority="high"
             />
@@ -368,7 +370,8 @@ export default function App() {
 
         <section className="section impact">
           <div className="logo-panel">
-<img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Glam Co Academy logo" loading="lazy" />          </div>
+            <img src="/images/logo.png" alt="Glam Co Academy logo" loading="lazy" />
+          </div>
           <div className="body-copy">
             <p className="eyebrow">BEYOND THE CLASSROOM</p>
             <h2>Beauty skills.<br /><em>Real-life impact.</em></h2>
